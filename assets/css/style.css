@@ -40,7 +40,7 @@ html{
     display: flex;
     list-style: none;
 }
-.container-menu header nav ul li a{
+.nav-link{
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -48,16 +48,8 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.container-menu header nav ul li a:hover{
+.nav-link:hover{
     color: #1CB698;
-}
-.nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
 }
 
 /* SECCION INICIO */
@@ -73,7 +65,7 @@ html{
 .inicio .container-banner{
     padding: 20px;
     background-color: #1e2326;
-    max-width: 350px;
+    max-width: 550px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
@@ -92,8 +84,13 @@ html{
     font-family: 'Righteous';
 }
 .inicio .container-banner h2{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: normal;
+}
+.inicio .container-banner h2 span{
+    font-size: 20px;
+    font-weight: normal;
+    color: #CC1F9C;
 }
 .inicio .container-banner .redes a{
     color: #fff;
@@ -277,21 +274,21 @@ html{
     font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
 .skills .skill .javascript{
     width: 0%;
     animation: 2s javascript forwards;
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 75%;}
+}
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
 }
 .skills .skill .python{
     width: 0%;
@@ -308,6 +305,14 @@ html{
 @keyframes bootstrap {
     0%{width: 0%;}
     100%{width: 81%;}
+}
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 45%;}
 }
 .skills .skill .comunicacion{
     width: 0%;
@@ -332,6 +337,14 @@ html{
 @keyframes creatividad {
     0%{width: 0%;}
     100%{width: 98%;}
+}
+.skills .skill .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 95%;}
 }
 .skills .skill .proyect{
     width: 0%;
@@ -536,6 +549,9 @@ html{
     color: #fff;
     font-size: 18px;
 }
+.contacto input::placeholder {
+    color: #fff;
+}
 .contacto button{
     cursor: pointer;
     background-color: transparent;
@@ -601,4 +617,73 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .row{
+        display: block;
+    }
+    .sobremi .row .col{
+        width: fit-content;
+    }
+
+    .skills .row{
+        display: block;
+    }
+    .skills .row .col{
+        width: 100%;
+    }
+    .skills .row .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .row{
+        display: block;
+    }
+    .curriculum .row .col{
+        width: 90%;
+    }
+    .curriculum .row .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .row{
+        display: block;
+    }
+    .contacto .row .col{
+        width: 100%;
+    }
 }

@@ -23,26 +23,37 @@
 </head>
 <body>
     <!-- ---------- Menu de navegacion ---------- --> 
-<div class="container-menu">
-    <header>
-        <div class="logo">
-            <a href="#" class="logo">Iván <i class="fa-solid fa-circle"></i></a>
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container-menu">
+            <header>
+                <div class="logo">
+                    <a href="#" class="logo">Iván Fritz <i class="fa-solid fa-circle"></i></a>
+                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#questions" class="nav-link">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">CURRICULUM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">PORTAFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SOBRE MI</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">CURRICULUM</a></li>
-                <li><a href="#">PORTAFOLIO</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <div class="nav-responsive">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </header>
-</div>
+    </nav>
 
     <!-- ---------- Seccion de Inicio ---------- --> 
 <section class="inicio" id="inicio">
@@ -51,7 +62,7 @@
             <img src="./assets/img/port.png" alt="">
         </div>
         <h1>Iván Fritz</h1>
-        <h2>Ingeniero en Informatica - Web Developer</h2>
+        <h2>Ingeniero en Informatica - <span>Web Developer</span></h2>
         <div class="redes">
             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -117,83 +128,101 @@
     </section>
 
     <!-- ---------- Seccion Skills ---------- --> 
-<section class="skills" id="skills">
-    <div class="container-seccion">
-        <h2>Skills</h2>
-        <div class="row">
-            <div class="col">
-                <h3>Habilidades tecnicas</h3>
-                <div class="skill">
-                    <span>HTML & CSS</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>75%</span>
+    <section class="skills" id="skills">
+        <div class="container-seccion">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- Habilidades Tecnicas -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <span>JavaScript</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>50%</span>
+                <!-- Habilidades Blandas -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <span>Python</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>25%</span>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <span>Bootstrap</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>81%</span>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <h3>Habilidades blandas</h3>
-                <div class="skill">
-                    <span>Comunicación</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>80%</span>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <span>Trabajo en Equipo</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>70%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Creatividad</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>98%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Project Managment</span>
-                    <div class="barra-skill">
-                        <div class="progeso">
-                            <span>94%</span>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- ---------- Seccion Curriculum ---------- --> 
@@ -204,28 +233,19 @@
             <div class="col izquierda">
                 <h3>Educación</h3>
                 <div class="item izq">
-                    <h4>Arte y Multimedia</h4>
+                    <h4>Instituto Profesional IACC</h4>
                     <span class="casa">Universidad de Los Lagos</span>
-                    <span class="fecha">2013</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cumque!</p>
+                    <span class="fecha">2022</span>
+                    <p>Diplomado en Ciberseguridad.</p>
                     <div class="conectori">
                         <div class="circuloi"></div>
                     </div>
                 </div>
                 <div class="item izq">
-                    <h4>Arte y Multimedia</h4>
+                    <h4>Universidad de Los Lagos</h4>
                     <span class="casa">Universidad de Los Lagos</span>
-                    <span class="fecha">2013</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, repudiandae.</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
-                    </div>
-                </div>
-                <div class="item izq">
-                    <h4>Arte y Multimedia</h4>
-                    <span class="casa">Universidad de Los Lagos</span>
-                    <span class="fecha">2013</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, inventore!</p>
+                    <span class="fecha">2019</span>
+                    <p>Titulado en Ingeniería en Informática. </p>
                     <div class="conectori">
                         <div class="circuloi"></div>
                     </div>
@@ -234,28 +254,22 @@
             <div class="col derecha">
                 <h3>Experiencia Laboral</h3>
                 <div class="item der">
-                    <h4>Arte y Multimedia</h4>
+                    <h4>Responsable de Tecnologías de la Información, Liceo Polivalente de Ancud.</h4>
                     <span class="casa">Universidad de Los Lagos</span>
-                    <span class="fecha">2013</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima numquam nostrum placeat sequi nesciunt accusantium?</p>
+                    <span class="fecha">Corporación de Educación Municipal / 2019-2024</span>
+                    <p>• Gestionar sistemas administrativos regulares, complementarios y de apoyo, asegurando procesos y estándares de calidad para una operación eficiente dentro del establecimiento.</p>
+                    <p>• Administrar la plataforma de Google Workspace, garantizando su correcto funcionamiento y la seguridad de los datos.</p>
+                    <p>• Gestionar contratos con proveedores, asegurando su correcta ejecución, facturación y pago.</p>
                     <div class="conectord">
                         <div class="circulod"></div>
                     </div>
                 </div>
                 <div class="item der">
-                    <h4>Arte y Multimedia</h4>
+                    <h4>Encargado de Informática, Liceo Domingo Espiñeira Riesco de Ancud.</h4>
                     <span class="casa">Universidad de Los Lagos</span>
-                    <span class="fecha">2013</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi asperiores quam harum optio tempora beatae magnam perferendis eaque aliquam incidunt?</p>
-                    <div class="conectord">
-                        <div class="circulod"></div>
-                    </div>
-                </div>
-                <div class="item der">
-                    <h4>Arte y Multimedia</h4>
-                    <span class="casa">Universidad de Los Lagos</span>
-                    <span class="fecha">2013</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatem quasi corrupti debitis magnam iure. At aliquid sint illo cum.</p>
+                    <span class="fecha">Corporación de Educación Municipal / 2008-2019</span>
+                    <p>• Administrar, mantener y actualizar la infraestructura informática del establecimiento educacional, incluyendo hardware, redes y sistemas operativos.</p>
+                    <p>• Brindar asistencia técnica a estudiantes, docentes y personal administrativo en el uso de equipos informáticos, software educativo y plataformas de aprendizaje en línea.</p>
                     <div class="conectord">
                         <div class="circulod"></div>
                     </div>
@@ -274,7 +288,7 @@
                 <img src="./assets/img/p1.jpg" alt="">
                 <div class="overlay">
                     <h3>Diseño</h3>
-                    <p>Fotografía</p>
+                    <p>Pagina Web</p>
                 </div>
             </div>
             <div class="proyecto">
@@ -302,14 +316,14 @@
                 <img src="./assets/img/p5.jpg" alt="">
                 <div class="overlay">
                     <h3>Diseño</h3>
-                    <p>Fotografía</p>
+                    <p>Pagina Web</p>
                 </div>
             </div>
             <div class="proyecto">
                 <img src="./assets/img/p6.jpg" alt="">
                 <div class="overlay">
                     <h3>Diseño</h3>
-                    <p>Fotografía</p>
+                    <p>Pagina Web</p>
                 </div>
             </div>
         </div>
@@ -322,15 +336,25 @@
         <h2>Contacto</h2>
         <div class="row">
             <!-- Formulario -->
-                <input type="text" placeholder="Tú Nombre">
-                <input type="text" placeholder="Número telefónico">
-                <input type="text" placeholder="Dirección de correo">
-                <input type="text" placeholder="Tema">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button>
-                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                    <span class="overlay"></span>
-                </button>
+            <form class="row g-3">
+                <div class="col-12">
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="col-12">
+                    <input type="tel" class="form-control" id="tel" placeholder="Numero telefonico">
+                </div>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="email" placeholder="Direccion de correo" required>
+                </div>
+                <div class="col-12">
+                    <textarea name="" id="" class="form-control" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+              </form>
         </div>
     </div>
 </section>
@@ -344,7 +368,7 @@
         <div class="redes">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="#"><i class="fa-solid fa-rss"></i></a>
         </div>
